@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "yes": "secretgarden-app",
+    "y": "secretgarden-app",
+    "default": "secretgarden-app"
+  },
+  "targets": {},
+  "etags": {}
+}
