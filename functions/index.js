@@ -5,8 +5,9 @@ const crypto = require("crypto");
 // Inisialisasi Firebase Admin
 admin.initializeApp();
 
+require('dotenv').config(); // Memuat environment variable dari file .env
 // Shared secret key yang diberikan oleh Midtrans
-const sharedSecretKey = 'Mid-server-ImtdiRoA9e79c8dbTY_8Sfkl';
+const sharedSecretKey = 'process.env.MIDTRANS_SECRET_KEY';
 
 // Fungsi untuk menghasilkan signature
 const generateSignature = (data, key) => {
